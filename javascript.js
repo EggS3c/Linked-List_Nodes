@@ -7,7 +7,7 @@ class Node {
 };
 
 //adding nodes
-const a = new Node('A'); const b = new('B'); const c = new Node('C'); const d = new Node('D');
+const a = new Node('A'); const b = new Node('B'); const c = new Node('C'); const d = new Node('D');
 
 //linking nodes
 // A -> B -> C -> D -> null
@@ -15,8 +15,8 @@ a.next = b;
 b.next = c;
 c.next = d;
 
-//iterative algorithm
-const PrintLinkedList (headh) => {
+//iterative algorithm Solution
+const PrintLinkedList = (head) => {
   let current = head;
   while (current != null) {
     console.log(current.val);
@@ -27,7 +27,7 @@ const PrintLinkedList (headh) => {
 PrintLinkedList(a);
 
 
-//recursive algorithm
+//recursive algorithm Solution
 const PrintLinkedList = (head) => {
   if(head == null){
     console.log(head.val);
