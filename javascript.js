@@ -29,10 +29,9 @@ PrintLinkedList(a);
 
 //recursive algorithm Solution
 const PrintLinkedList = (head) => {
-  if(head == null){
-    console.log(head.val);
-    PrintLinkedList(head.next);
-  };
+  if(head == null) return;
+  console.log(head.val);
+  PrintLinkedList(head.next);
 };
 
 PrintLinkedList(a);
